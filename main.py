@@ -4,9 +4,13 @@ import pickle
 from pydantic import BaseModel
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from flask_cors import CORS
+
 
 # Initializing the fast API server
 app = FastAPI()
+CORS(app)
+
 origins = [
     "http://localhost.tiangolo.com",
     "https://localhost.tiangolo.com",
