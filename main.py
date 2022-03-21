@@ -13,6 +13,8 @@ origins = [
     "http://localhost",
     "http://localhost:8080",
     "http://localhost:3000",
+    "https://carrateio.netlify.app/",
+    "https://carrateio.netlify.app/predict",
 ]
 app.add_middleware(
     CORSMiddleware,
